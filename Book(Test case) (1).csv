@@ -1,0 +1,177 @@
+Project Name,Bharat Go,,,,,,,,,
+Created By,Vishal,,,,,,,,,
+Date of Creation,27-01-2025,,,,,,,,,
+Date of Review,28-01-2025,,,,,,,,,
+,,,,,,,,,,
+Test case ID,Test scenario,Test case,Pre requisite,Test steps,Test data,Expected Result,Actual Result,Status,Comment,Excute by
+TC001,To verify login functionality valid data,Enter by valid 10 digit login  number,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter valid Phone no
+2) Click on the get started button",9667950075,"Get Started button is enabled, and the number is accepted.",Accepted,Pass,,Vishal
+TC002,To verify login functionality invalid data,Enter by invalid login number,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter invalid Phone no
+2) Click on the get started button","99999
+or
+96665889785547","Get Started button is disabled, and the number is not accepted.",Not accepted,Pass,,Vishal
+TC003,To verify login functionality using special character,Enter by alphabets and Special character,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter special charater 
+2) Click on the get started button","abcd
+or
+@#$%^^&*(!@",Should not accepted,Not accepted,Pass,,Vishal
+TC004,To verify login functionality keep blank,Verify by blank textfield,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Nothing to write
+2) Click on the get started button",,Get Started button is disabled,Disabled,Pass,,Vishal
+TC005,Verify country code ,Verify country code of login page,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login",,,Should be displayed,It is displayed,Pass,,Vishal
+TC006,Verify country code ,Verify country code  don't use ,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login",,,"Get Started button is disabled, and the number is not accepted.",Not accepted,Pass,,Vishal
+TC007,verify symbol,Verify country flag ,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login",,,Should be displayed,It is displayed,Pass,,Vishal
+TC008,To verify login functionality ,Verify placeholder,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login",,,Should be displayed,It is displayed,Pass,,Vishal
+TC009,To verify login functionality,"Verify to click ""Terms"" and ""Conditions"" ","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Click on ""Terms"" and ""Conditions"" ",,"""Terms"" and ""Conditions"" should be displayed",It is displayed,Pass,,Vishal
+TC010,To verify login functionality,"Verify to click ""Privacy Policy"" ","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Click on ""Privacy Policy"" ",,"""Privacy Policy"" should be displayed",It is displayed,Pass,,Vishal
+TC011,To verify OTP functionality page,Verigy to enter a valid 6-digit OTP,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter a valid 6-digit OTP.
+2) Observe the behavior after input.
+3) Click ""Verify"".",844744,"OTP is accepted, and user proceeds to the next screen.",Accepted,Pass,,Vishal
+TC012,Verify OTP less than 6 digits,Enter fewer than 6 digits,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter a number with fewer than 6 digits.
+2) Click ""Verify"".",123,Continue button is disabled.,Disabled,Pass,,Vishal
+TC013,Verify OTP more than 6 digits,Enter more than 6 digits,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter a number with more than 6 digits.
+2) Click ""Verify"".",123456789,Input should restrict additional digits beyond 6.,restrict additional digits,Pass,,Vishal
+TC014,Validate OTP with alphabets,Enter alphabets instead of numbers,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter alphabets in the input field.
+2) Click ""Verify"".",abc123,Textfield should not acceptable,Not accepted,Pass,,Vishal
+TC015,Validate OTP with special characters,Enter special characters in the input field,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter characters like @#$%^&.
+2) Click ""Verify"".",!@#123,Textfield should not acceptable,Not accepted,Pass,,Vishal
+TC016,Verify blank OTP input,Leave the OTP field blank,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Do not enter any OTP.
+2) Click ""Verify"".",None,Verify button remains disabled until input is provided.,Disabled,Pass,,Vishal
+TC017,Validate timer functionality,"Check if ""Resend OTP"" timer works","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Wait for the timer to complete.
+2) Click ""Resend OTP"".",None,"Timer reaches 0 and ""Resend OTP"" becomes clickable.",Clickable,Pass,,Vishal
+TC018,Verify Resend OTP functionality,Test Resend OTP button behavior,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Click ""Resend OTP"".
+2) Check if a new OTP is sent.",None,New OTP is sent successfully.,Successfully sent,Pass,,Vishal
+TC019,Validate OTP input copy-paste,Paste a valid/invalid OTP into the field,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Copy and paste a valid OTP.
+2) Copy and paste an invalid OTP.
+3) Click ""Verify"".","844744, abcdef",Valid OTP is accepted; invalid OTP shows error.,Accepted / Displayed Error,Pass,,Vishal
+TC020,Verify error message for wrong OTP,Enter an incorrect OTP,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter an incorrect OTP.
+2) Click ""Verify"".",654321,"Error message: ""Invalid OTP. Please try again."".",Displayed,Pass,,Vishal
+TC021,Validate OTP field responsiveness,Check input field layout on different screen sizes,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Access the OTP field on desktop, tablet, and mobile.
+2) Check UI responsiveness.",None,OTP field is responsive and aligned properly on all screens.,aligned properly,Pass,,Vishal
+TC022,Validate OTP expiry,Enter an OTP after it has expired,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Wait for OTP expiry time.
+2) Enter the OTP.
+3) Click ""Verify"".",886007 (expired),"Error message: ""OTP has expired. Please request a new one."".",Displayed,Pass,,Vishal
+TC023,Verify input mask functionality,Check if input displays dots instead of numbers,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter a valid OTP.
+2) Observe if numbers are hidden (masked).",886007,number convert into dots,Not accepted,Fail,333,Vishal
+TC024,Validate Store Name input,Verify Store Name accepts valid input,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the ""Store Name"" text field. 
+ 2. Enter a valid store name (e.g., ""Tech Store"").",Tech Store,The Store Name field accepts the input without errors.,Accepted,Pass,,Vishal
+TC027,Validate Store Name empty field,Verify Store Name field cannot be blank,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Leave the ""Store Name"" field blank. 
+ 2. Attempt to proceed by clicking the ""Next"" button.",Empty input,"An error message (e.g., ""Store Name is required"") is displayed.",Error displayed,Pass,,Vishal
+TC028,Validate Owner Name input,Verify Owner Name accepts valid input,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the ""Owner Name"" text field. 
+ 2. Enter a valid name (e.g., ""John Doe"").",Vishal,The Owner Name field accepts the input without errors.,Accepted,Pass,,Vishal
+TC029,Validate Business Category selection,Verify that a category can be selected.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on a category button (e.g., ""Grocery & Superstore"").",Grocery & Superstore,"The selected category is highlighted, and the selection is visible to the user.",Highlighted and selection visible,Pass,,Vishal
+TC030,Validate Next button behavior,"Verify ""Next"" button is enabled only when required fields are filled.","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Leave all fields empty. 
+ 2. Attempt to click the ""Next"" button. 
+ 3. Fill in all required fields and select a category, then click ""Next"".",Various inputs,"The ""Next"" button is disabled when fields are empty and enabled when all required inputs are filled and a category is selected.",Disabled,Pass,,Vishal
+TC031,Validate Back button behavior,"Verify the ""Back"" button navigates to the previous page.","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click the ""Back"" button.",N/A,"The user is navigated to the previous page, and form inputs retain their values.",navigated to previous page and inputs retains,Pass,,Vishal
+TC032,Validate error messages,Verify error messages for missing required fields are displayed appropriately.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Leave ""Store Name"" and ""Owner Name"" fields empty. 
+ 2. Click the ""Next"" button.",Empty input,"Error messages (e.g., ""Store Name is required"" and ""Owner Name is required"") are displayed below the respective fields in a readable format and style.",Displayed,Pass,,Vishal
+TC033,Validate skip button behavior,Verify the skip button,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login",1. Click on skip button,,Skip button clickable,Not displayed,Fail,,Vishal
+TC034,Verify that the logo image can be uploaded.,Verify upload valid logo in valid size.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login",Valid logo image,,The logo image is uploaded and displayed without errors.,Displayed,Pass,,Vishal
+TC035,Validate invalid logo upload,Verify that an invalid logo image cannot be uploaded.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the logo upload area. 
+ 2. Select an invalid file (e.g., >2MB or unsupported format).",Invalid image file,"An error message is displayed (e.g., ""File size too large"" or ""Invalid format"").",Displayed,Pass,,Vishal
+TC036,Validate Banner upload,Verify that the banner image can be uploaded.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the banner upload area. 
+ 2. Select a valid image file under 2MB (1280x390px).",Valid banner image,The banner image is uploaded and displayed without errors.,Uploaded and displayed,Pass,,Vishal
+TC037,Validate invalid banner upload,Verify that an invalid banner image cannot be uploaded.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the banner upload area. 
+ 2. Select an invalid file (e.g., >2MB or unsupported format).",Invalid image file,"An error message is displayed (e.g., ""File size too large"" or ""Invalid format"").",Displayed,Pass,,Vishal
+TC038,Validate default theme color,Verify that the default theme color is pre-selected.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login",1. Check the theme color selection field.,N/A,"The default theme color (e.g., Navy Blue) is selected by default.",Default selected,Pass,,Vishal
+TC039,Validate theme color change,Verify that the user can change the theme color.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the theme color option. 
+ 2. Select a different color.",New theme color,The selected theme color is updated and visible in the selection field.,Updated and Visible,Pass,,Vishal
+TC040,Validate default store timing,Verify that the default store timing is pre-selected.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Check the ""Store Open and Close Timings"" field.",N/A,"The default option ""Keep 24/7 Open"" is selected.",Selected,Pass,,Vishal
+TC041,Validate store timing change,Verify that the user can change the store timing.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the ""Store Open and Close Timings"" option. 
+ 2. Select a different timing option.",New timing option,The selected timing option is updated and visible in the selection field.,Updated and Visible,Pass,,Vishal
+TC042,Validate store one day timing change,Verify that user can change any day and timing,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click on the ""Store Open and Close Timings"" option. 
+ 2. Select a different timing option. (eg saturday 12pm - 8pm",,The selected timing option is updated and visible in the selection field.,Updated and Visible,Pass,,Vishal
+TC043,Validate Skip button behavior,"Verify that the ""Skip"" button bypasses personalization.","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click the ""Skip"" button.",N/A,The user is navigated to the next page without saving any personalization details.,Navigated to the next page,Pass,,Vishal
+TC044,Validate Next button behavior,"Verify that the ""Next"" button is enabled after uploading valid inputs.","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Upload valid logo and banner images. 
+ 2. Fill optional fields. 
+ 3. Click the ""Next"" button.",Valid inputs,"The ""Next"" button is enabled, and the user is navigated to the next page upon clicking it.","Enabled, clickable and navigate to next page",Pass,,Vishal
+TC045,Validate Back button behavior,"Verify the ""Back"" button navigates to the previous page.","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Click the ""Back"" button.",N/A,"The user is navigated to the previous page, and form inputs retain their values.",navigated to previous page and inputs retains,Pass,,Vishal
+TC046,Validate optional fields,Verify that fields like theme color and timings are optional.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Leave theme color and timings at default. 
+ 2. Click the ""Next"" button.",N/A,The user can proceed to the next page without filling optional fields.,Proceeded,Pass,,Vishal
+TC047,Validate responsive design,Verify the form works on different screen sizes.,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1. Open the form on desktop, tablet, and mobile devices. 
+ 2. Interact with all the fields and buttons.",N/A,"The form layout is responsive, and all functionalities work across different screen sizes.",Properly response,Pass,,Vishal
+TC048,Verify mobile number auto-fill,"Verify if mobile number is pre-filled when ""Use same as Registered"" is checked","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Check the checkbox ""Use same as Registered Number"".",N/A,Mobile number field auto-fills with registered number.,Auto-filled,Pass,,Vishal
+TC049,Validate manual mobile number input,"Enter a new mobile number when ""Use same as Registered"" is unchecked","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Uncheck ""Use same as Registered Number"".
+2) Enter a valid 10-digit mobile number.",9812345678,Mobile number is accepted.,Accepted,Pass,,Vishal
+TC050,Validate invalid mobile number format,Enter an invalid mobile number,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter a mobile number with fewer/more than 10 digits.
+2) Click ""Next"".","12345, 123456789012","Error message: ""Please enter a valid 10-digit mobile number.""",Displayed,Pass,,Vishal
+TC051,Validate non-numeric mobile number input,Enter alphabets or special characters in the mobile number field,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter alphabets/special characters like abc, @#!.
+2) Click ""Next"".","abc123, @123456","Error message: ""Please enter a valid 10-digit mobile number.""",Displayed,Pass,,Vishal
+TC052,Verify email ID field with valid input,Enter a valid email address,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter a valid email address in the ""Store Contact Email ID"" field.
+2) Click ""Next"".",04parjapatvishal@gmail.com,Email ID is accepted.,Accepted,Pass,,Vishal
+TC053,Validate invalid email address format,Enter an invalid email ID,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Enter invalid email formats (e.g., test@.com, example.com).
+2) Click ""Next"".",04parjapatvishal@gmail.com,"Error message: ""Please enter a valid email address.""",Error displayed,Pass,,Vishal
+TC054,Validate mandatory email ID field,Leave the email ID field blank,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Do not enter any email ID.
+2) Click ""Next"".",N/A,Without Email id button disabled,Disabled,Pass,,Vishal
+TC055,Verify Google button functionality,Click on the Google button to autofill email ID,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Click the ""Google"" button.
+2) Select a valid Google account.",Google account credentials,Email ID field auto-fills with the selected account's email.,Auto-filled,Pass,,Vishal
+TC056,Verify address input functionality,Add a valid store address,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Click ""Add Address"".
+2) Enter a valid address.
+3) Save and proceed.","123, Main Street, Faridabad","Address is accepted, and ""Next"" button is enabled.","Disabled, clickable and navigate to next page",Fail,,Vishal
+TC057,Verify address button functionality,Verify the confirm and save button,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Click ""Add Address"".
+2) Enter a valid address.
+3) Save and proceed.","123, Main Street, Faridabad",est,Not working ,Fail,,Vishal
+TC058,Validate incomplete address input,Add an incomplete or invalid store address,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Click ""Add Address"".
+2) Enter an incomplete address (e.g., only numbers).
+3) Save and proceed.",,"Address is not accepted, and ""Next"" button is disabled.",Disabled,Pass,,Vishal
+TC059,"Verify ""Next"" button disabled initially","Check if the ""Next"" button is disabled without valid inputs","1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Do not fill any fields.
+2) Observe the ""Next"" button state.",N/A,Next button remains disabled until all mandatory fields are filled.,Disabled,Pass,,Vishal
+TC060,Validate form responsiveness,Check form layout on different screen sizes,"1) Open the browser
+2) Enter the URL:- https://seller.bharatgo.com/login","1) Access the form on desktop, tablet, and mobile.
+2) Check UI alignment and responsiveness.",N/A,Form layout is responsive and aligned properly on all screen sizes.,Properly response,Pass,,Vishal

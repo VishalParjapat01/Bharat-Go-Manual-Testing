@@ -1,0 +1,16 @@
+Bug ID,Module,Bug Description,Step to reproduce,Test Data,Expected result,Actual Result,Severity,Priority,Screenshot/video,Device Description,Browser,Reported BY,Date
+Bug_001,Store page,No skip button at store creattion page,"1. Opened the link: https://seller.bharatgo.com/onboarding
+2. Entered a mobile number.
+3. Entered an invalid email ID.","Mobile Number-9667950075
+OTP 
+014541",There should be skip button,No button.,P3,Medium,,Dell G3 ,Chrome,Vishal,27-Jan-25
+Bug_002, Login OTP,OTP have to change dots after use,"1. Open the link: https://seller.bharatgo.com/onboarding
+2. Enter a mobile number.
+3.Enter otp",NA,OTP should be change into dots mark.,Not change,P3,Low,,Dell G3 ,Chrome,Vishal,27-Jan-25
+Bug_003, Add address confirm and save button,After adding the address confirm and save button,"1. Open the link: https://seller.bharatgo.com/onboarding
+2. Enter a mobile number.
+3. Enter a valid email ID.
+4. Enter address.
+5. Click on button 
+
+",NA,Confirm and save button working fine,Not working,P1,High,,Dell G3 ,Chrome,Vishal,28-Jan-25
